@@ -1,0 +1,9 @@
+{
+  "name": "multimap-monorepo-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/multimap-monorepo-e2e/src",
+  "targets": {},
+  "implicitDependencies": ["multimap-monorepo"],
+  "tags": []
+}

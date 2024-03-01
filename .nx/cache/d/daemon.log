@@ -1,0 +1,250 @@
+[NX Daemon Server] - 2024-03-01T08:12:38.676Z - Started listening on: /var/folders/jd/ccx02x3n3777429sf1_kl1hw0000gn/T/e1a224411d58cc574bc5/d.sock
+[NX Daemon Server] - 2024-03-01T08:12:38.677Z - [WATCHER]: Subscribed to changes within: /Users/thorsten/dev/js/_experiments/010-multimap-monorepo (native)
+[NX Daemon Server] - 2024-03-01T08:12:38.687Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-03-01T08:12:38.687Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-03-01T08:12:38.687Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-03-01T08:12:38.688Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-03-01T08:12:38.688Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-01T08:12:38.688Z - [REQUEST]: 
+[NX Daemon Server] - 2024-03-01T08:12:38.688Z - [REQUEST]: 
+[NX Daemon Server] - 2024-03-01T08:12:39.181Z - Time taken for 'hash changed files from watcher' 0.5138329999754205ms
+[NX Daemon Server] - 2024-03-01T08:12:39.185Z - [WATCHER]: 2 file(s) created or restored, 0 file(s) modified, 0 file(s) deleted
+[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+[NX Daemon Server] - 2024-03-01T08:12:39.321Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-03-01T08:12:39.322Z - Time taken for 'total for creating and serializing project graph' 633.85691699991ms
+[NX Daemon Server] - 2024-03-01T08:12:39.322Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-01T08:12:39.322Z - [REQUEST]: 
+[NX Daemon Server] - 2024-03-01T08:12:39.322Z - [REQUEST]: 
+[NX Daemon Server] - 2024-03-01T08:12:39.467Z - [WATCHER]: 6 file(s) created or restored, 0 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-03-01T08:12:39.467Z - Time taken for 'hash changed files from watcher' 0.026540999999269843ms
+[NX Daemon Server] - 2024-03-01T08:12:39.469Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-03-01T08:12:39.469Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 633. Response time: 148.
+[NX Daemon Server] - 2024-03-01T08:12:39.472Z - [REQUEST]: Responding to the client. handleRequestFileData
+[NX Daemon Server] - 2024-03-01T08:12:39.472Z - Done responding to the client handleRequestFileData
+[NX Daemon Server] - 2024-03-01T08:12:39.472Z - Handled REQUEST_FILE_DATA. Handling time: 0. Response time: 0.
+[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+[NX Daemon Server] - 2024-03-01T08:12:39.508Z - Time taken for 'build-project-configs' 169.5838330000406ms
+[NX Daemon Server] - 2024-03-01T08:12:39.508Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-03-01T08:12:39.564Z - [WATCHER]: 4 file(s) created or restored, 0 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-03-01T08:12:39.569Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-01T08:12:39.569Z - [REQUEST]: .nx/cache/cypress.hash,.nx/cache/file-map.json,.nx/cache/project-graph.json,.nx/cache/vite.hash
+[NX Daemon Server] - 2024-03-01T08:12:39.569Z - [REQUEST]: .nx/cache/file-map.json~dd87603c,.nx/cache/project-graph.json~dd87603c
+[NX Daemon Server] - 2024-03-01T08:12:39.806Z - Time taken for 'hash changed files from watcher' 0.4157920000143349ms
+[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+[NX Daemon Server] - 2024-03-01T08:12:39.847Z - Time taken for 'build-project-configs' 263.06641699990723ms
+[NX Daemon Server] - 2024-03-01T08:12:39.901Z - [WATCHER]: 4 file(s) created or restored, 0 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-03-01T08:12:40.002Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-01T08:12:40.002Z - [REQUEST]: .nx/cache/file-map.json,.nx/cache/vite.hash,.nx/cache/cypress.hash,.nx/cache/project-graph.json
+[NX Daemon Server] - 2024-03-01T08:12:40.002Z - [REQUEST]: .nx/cache/project-graph.json~88587b96,.nx/cache/file-map.json~88587b96
+[NX Daemon Server] - 2024-03-01T08:12:40.236Z - Time taken for 'hash changed files from watcher' 0.39316600002348423ms
+[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+[NX Daemon Server] - 2024-03-01T08:12:40.276Z - Time taken for 'build-project-configs' 260.00883299997076ms
+[NX Daemon Server] - 2024-03-01T08:12:40.333Z - [WATCHER]: 2 file(s) created or restored, 2 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-03-01T08:12:40.434Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-01T08:12:40.434Z - [REQUEST]: .nx/cache/file-map.json,.nx/cache/project-graph.json,.nx/cache/vite.hash,.nx/cache/cypress.hash
+[NX Daemon Server] - 2024-03-01T08:12:40.434Z - [REQUEST]: .nx/cache/file-map.json~4020a851,.nx/cache/project-graph.json~4020a851
+[NX Daemon Server] - 2024-03-01T08:12:40.672Z - Time taken for 'hash changed files from watcher' 0.40912500000558794ms
+[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+[NX Daemon Server] - 2024-03-01T08:12:40.708Z - Time taken for 'build-project-configs' 261.43204200000037ms
+[NX Daemon Server] - 2024-03-01T08:12:40.765Z - [WATCHER]: 2 file(s) created or restored, 2 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-03-01T08:12:40.866Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-01T08:12:40.866Z - [REQUEST]: .nx/cache/project-graph.json,.nx/cache/file-map.json,.nx/cache/vite.hash,.nx/cache/cypress.hash
+[NX Daemon Server] - 2024-03-01T08:12:40.866Z - [REQUEST]: .nx/cache/file-map.json~f31860ac,.nx/cache/project-graph.json~f31860ac
+[NX Daemon Server] - 2024-03-01T08:12:41.105Z - Time taken for 'hash changed files from watcher' 0.3750420000869781ms
+[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+[NX Daemon Server] - 2024-03-01T08:12:41.142Z - Time taken for 'build-project-configs' 261.7457919999724ms
+[NX Daemon Server] - 2024-03-01T08:12:41.198Z - [WATCHER]: 2 file(s) created or restored, 2 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-03-01T08:12:41.298Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-01T08:12:41.299Z - [REQUEST]: .nx/cache/project-graph.json,.nx/cache/file-map.json,.nx/cache/cypress.hash,.nx/cache/vite.hash
+[NX Daemon Server] - 2024-03-01T08:12:41.299Z - [REQUEST]: .nx/cache/project-graph.json~c79bdd43,.nx/cache/file-map.json~c79bdd43
+[NX Daemon Server] - 2024-03-01T08:12:41.530Z - Time taken for 'hash changed files from watcher' 0.33241700008511543ms
+[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+[NX Daemon Server] - 2024-03-01T08:12:41.572Z - Time taken for 'build-project-configs' 257.68591700005345ms
+[NX Daemon Server] - 2024-03-01T08:12:41.626Z - [WATCHER]: 2 file(s) created or restored, 2 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-03-01T08:12:41.728Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-01T08:12:41.728Z - [REQUEST]: .nx/cache/project-graph.json,.nx/cache/file-map.json,.nx/cache/cypress.hash,.nx/cache/vite.hash
+[NX Daemon Server] - 2024-03-01T08:12:41.728Z - [REQUEST]: .nx/cache/file-map.json~4010bb11,.nx/cache/project-graph.json~4010bb11
+[NX Daemon Server] - 2024-03-01T08:12:41.960Z - Time taken for 'hash changed files from watcher' 0.3886659999843687ms
+[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+[NX Daemon Server] - 2024-03-01T08:12:41.996Z - Time taken for 'build-project-configs' 255.202249999973ms
+[NX Daemon Server] - 2024-03-01T08:12:42.051Z - [WATCHER]: 2 file(s) created or restored, 2 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-03-01T08:12:42.153Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-01T08:12:42.153Z - [REQUEST]: .nx/cache/file-map.json,.nx/cache/project-graph.json,.nx/cache/cypress.hash,.nx/cache/vite.hash
+[NX Daemon Server] - 2024-03-01T08:12:42.153Z - [REQUEST]: .nx/cache/file-map.json~f3882faa,.nx/cache/project-graph.json~f3882faa
+[NX Daemon Server] - 2024-03-01T08:12:42.399Z - Time taken for 'hash changed files from watcher' 0.43066600000020117ms
+[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+[NX Daemon Server] - 2024-03-01T08:12:42.436Z - Time taken for 'build-project-configs' 269.8142499999376ms
+[NX Daemon Server] - 2024-03-01T08:12:42.492Z - [WATCHER]: 2 file(s) created or restored, 2 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-03-01T08:12:42.594Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-01T08:12:42.594Z - [REQUEST]: .nx/cache/project-graph.json,.nx/cache/file-map.json,.nx/cache/vite.hash,.nx/cache/cypress.hash
+[NX Daemon Server] - 2024-03-01T08:12:42.594Z - [REQUEST]: .nx/cache/project-graph.json~5f19b620,.nx/cache/file-map.json~5f19b620
+[NX Daemon Server] - 2024-03-01T08:12:42.822Z - Time taken for 'hash changed files from watcher' 0.36795800004620105ms
+[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+[NX Daemon Server] - 2024-03-01T08:12:42.859Z - Time taken for 'build-project-configs' 252.43633400008548ms
+[NX Daemon Server] - 2024-03-01T08:12:42.916Z - [WATCHER]: 2 file(s) created or restored, 2 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-03-01T08:12:43.017Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-01T08:12:43.018Z - [REQUEST]: .nx/cache/file-map.json,.nx/cache/project-graph.json,.nx/cache/vite.hash,.nx/cache/cypress.hash
+[NX Daemon Server] - 2024-03-01T08:12:43.018Z - [REQUEST]: .nx/cache/file-map.json~1b4f0d64,.nx/cache/project-graph.json~1b4f0d64
+(node:8666) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 exit listeners added to [process]. Use emitter.setMaxListeners() to increase limit
+(Use `Code Helper (Plugin) --trace-warnings ...` to show where the warning was created)
+[NX Daemon Server] - 2024-03-01T08:12:43.242Z - Time taken for 'hash changed files from watcher' 0.4030829999828711ms
+[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+[NX Daemon Server] - 2024-03-01T08:12:43.276Z - Time taken for 'build-project-configs' 245.37529100000393ms
+[NX Daemon Server] - 2024-03-01T08:12:43.332Z - [WATCHER]: 2 file(s) created or restored, 2 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-03-01T08:12:43.433Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-01T08:12:43.433Z - [REQUEST]: .nx/cache/project-graph.json,.nx/cache/file-map.json,.nx/cache/vite.hash,.nx/cache/cypress.hash
+[NX Daemon Server] - 2024-03-01T08:12:43.433Z - [REQUEST]: .nx/cache/project-graph.json~ef177f83,.nx/cache/file-map.json~ef177f83
+[NX Daemon Server] - 2024-03-01T08:12:43.655Z - Time taken for 'hash changed files from watcher' 0.3642499999841675ms
+[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+[NX Daemon Server] - 2024-03-01T08:12:43.689Z - Time taken for 'build-project-configs' 244.12041700002737ms
+[NX Daemon Server] - 2024-03-01T08:12:43.746Z - [WATCHER]: 2 file(s) created or restored, 2 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-03-01T08:12:43.848Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-01T08:12:43.848Z - [REQUEST]: .nx/cache/file-map.json,.nx/cache/project-graph.json,.nx/cache/vite.hash,.nx/cache/cypress.hash
+[NX Daemon Server] - 2024-03-01T08:12:43.848Z - [REQUEST]: .nx/cache/file-map.json~6e2d1fd6,.nx/cache/project-graph.json~6e2d1fd6
+[NX Daemon Server] - 2024-03-01T08:12:44.088Z - Time taken for 'hash changed files from watcher' 0.3801250000251457ms
+[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+[NX Daemon Server] - 2024-03-01T08:12:44.124Z - Time taken for 'build-project-configs' 263.5352079999866ms
+[NX Daemon Server] - 2024-03-01T08:12:44.180Z - [WATCHER]: 2 file(s) created or restored, 2 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-03-01T08:12:44.281Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-01T08:12:44.282Z - [REQUEST]: .nx/cache/file-map.json,.nx/cache/project-graph.json,.nx/cache/cypress.hash,.nx/cache/vite.hash
+[NX Daemon Server] - 2024-03-01T08:12:44.282Z - [REQUEST]: .nx/cache/file-map.json~c65b187e,.nx/cache/project-graph.json~c65b187e
+[NX Daemon Server] - 2024-03-01T08:12:44.511Z - Time taken for 'hash changed files from watcher' 0.44712499994784594ms
+[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+[NX Daemon Server] - 2024-03-01T08:12:44.545Z - Time taken for 'build-project-configs' 250.29508300009184ms
+[NX Daemon Server] - 2024-03-01T08:12:44.601Z - [WATCHER]: 2 file(s) created or restored, 2 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-03-01T08:12:44.703Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-01T08:12:44.703Z - [REQUEST]: .nx/cache/file-map.json,.nx/cache/project-graph.json,.nx/cache/vite.hash,.nx/cache/cypress.hash
+[NX Daemon Server] - 2024-03-01T08:12:44.703Z - [REQUEST]: .nx/cache/file-map.json~6bc4afbf,.nx/cache/project-graph.json~6bc4afbf
+[NX Daemon Server] - 2024-03-01T08:12:44.922Z - Time taken for 'hash changed files from watcher' 0.41083399998024106ms
+[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+[NX Daemon Server] - 2024-03-01T08:12:44.956Z - Time taken for 'build-project-configs' 241.23662500001956ms
+[NX Daemon Server] - 2024-03-01T08:12:45.013Z - [WATCHER]: 2 file(s) created or restored, 2 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-03-01T08:12:45.114Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-01T08:12:45.114Z - [REQUEST]: .nx/cache/project-graph.json,.nx/cache/file-map.json,.nx/cache/vite.hash,.nx/cache/cypress.hash
+[NX Daemon Server] - 2024-03-01T08:12:45.114Z - [REQUEST]: .nx/cache/project-graph.json~1b9287f2,.nx/cache/file-map.json~1b9287f2
+[NX Daemon Server] - 2024-03-01T08:12:45.335Z - Time taken for 'hash changed files from watcher' 0.3693749998928979ms
+[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+[NX Daemon Server] - 2024-03-01T08:12:45.369Z - Time taken for 'build-project-configs' 242.08683299995027ms
+[NX Daemon Server] - 2024-03-01T08:12:45.426Z - [WATCHER]: 2 file(s) created or restored, 2 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-03-01T08:12:45.527Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-01T08:12:45.527Z - [REQUEST]: .nx/cache/file-map.json,.nx/cache/project-graph.json,.nx/cache/cypress.hash,.nx/cache/vite.hash
+[NX Daemon Server] - 2024-03-01T08:12:45.527Z - [REQUEST]: .nx/cache/file-map.json~a6ee31f1,.nx/cache/project-graph.json~a6ee31f1
+[NX Daemon Server] - 2024-03-01T08:12:45.751Z - Time taken for 'hash changed files from watcher' 0.337792000034824ms
+[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+[NX Daemon Server] - 2024-03-01T08:12:45.783Z - Time taken for 'build-project-configs' 243.98562499997206ms
+[NX Daemon Server] - 2024-03-01T08:12:45.841Z - [WATCHER]: 2 file(s) created or restored, 2 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-03-01T08:12:45.942Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-01T08:12:45.942Z - [REQUEST]: .nx/cache/file-map.json,.nx/cache/project-graph.json,.nx/cache/cypress.hash,.nx/cache/vite.hash
+[NX Daemon Server] - 2024-03-01T08:12:45.942Z - [REQUEST]: .nx/cache/file-map.json~b3b0b4fa,.nx/cache/project-graph.json~b3b0b4fa
+[NX Daemon Server] - 2024-03-01T08:12:46.162Z - Time taken for 'hash changed files from watcher' 0.4237089999951422ms
+[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+[NX Daemon Server] - 2024-03-01T08:12:46.196Z - Time taken for 'build-project-configs' 241.26175000006333ms
+[NX Daemon Server] - 2024-03-01T08:12:46.254Z - [WATCHER]: 2 file(s) created or restored, 2 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-03-01T08:12:46.355Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-01T08:12:46.355Z - [REQUEST]: .nx/cache/project-graph.json,.nx/cache/file-map.json,.nx/cache/cypress.hash,.nx/cache/vite.hash
+[NX Daemon Server] - 2024-03-01T08:12:46.355Z - [REQUEST]: .nx/cache/file-map.json~57f5b502,.nx/cache/project-graph.json~57f5b502
+[NX Daemon Server] - 2024-03-01T08:12:46.577Z - Time taken for 'hash changed files from watcher' 0.4567089999327436ms
+[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+[NX Daemon Server] - 2024-03-01T08:12:46.611Z - Time taken for 'build-project-configs' 243.10879199998453ms
+[NX Daemon Server] - 2024-03-01T08:12:46.669Z - [WATCHER]: 2 file(s) created or restored, 2 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-03-01T08:12:46.771Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-01T08:12:46.771Z - [REQUEST]: .nx/cache/file-map.json,.nx/cache/project-graph.json,.nx/cache/vite.hash,.nx/cache/cypress.hash
+[NX Daemon Server] - 2024-03-01T08:12:46.771Z - [REQUEST]: .nx/cache/file-map.json~f247ce3f,.nx/cache/project-graph.json~f247ce3f
+[NX Daemon Server] - 2024-03-01T08:12:46.990Z - Time taken for 'hash changed files from watcher' 0.4141669999808073ms
+[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+[NX Daemon Server] - 2024-03-01T08:12:47.024Z - Time taken for 'build-project-configs' 240.50349999999162ms
+[NX Daemon Server] - 2024-03-01T08:12:47.080Z - [WATCHER]: 2 file(s) created or restored, 2 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-03-01T08:12:47.182Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-01T08:12:47.182Z - [REQUEST]: .nx/cache/file-map.json,.nx/cache/project-graph.json,.nx/cache/vite.hash,.nx/cache/cypress.hash
+[NX Daemon Server] - 2024-03-01T08:12:47.182Z - [REQUEST]: .nx/cache/project-graph.json~7a0a4431,.nx/cache/file-map.json~7a0a4431
+[NX Daemon Server] - 2024-03-01T08:12:47.404Z - Time taken for 'hash changed files from watcher' 0.35641600005328655ms
+[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+[NX Daemon Server] - 2024-03-01T08:12:47.439Z - Time taken for 'build-project-configs' 244.703125ms
+[NX Daemon Server] - 2024-03-01T08:12:47.497Z - [WATCHER]: 2 file(s) created or restored, 2 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-03-01T08:12:47.598Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-01T08:12:47.598Z - [REQUEST]: .nx/cache/project-graph.json,.nx/cache/file-map.json,.nx/cache/vite.hash,.nx/cache/cypress.hash
+[NX Daemon Server] - 2024-03-01T08:12:47.598Z - [REQUEST]: .nx/cache/project-graph.json~5a891f25,.nx/cache/file-map.json~5a891f25
+[NX Daemon Server] - 2024-03-01T08:12:47.847Z - Time taken for 'hash changed files from watcher' 0.40999999991618097ms
+[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+[NX Daemon Server] - 2024-03-01T08:12:47.890Z - Time taken for 'build-project-configs' 279.52599999995437ms
+[NX Daemon Server] - 2024-03-01T08:12:47.948Z - [WATCHER]: 2 file(s) created or restored, 2 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-03-01T08:12:48.048Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-01T08:12:48.048Z - [REQUEST]: .nx/cache/project-graph.json,.nx/cache/file-map.json,.nx/cache/vite.hash,.nx/cache/cypress.hash
+[NX Daemon Server] - 2024-03-01T08:12:48.048Z - [REQUEST]: .nx/cache/file-map.json~0eb9fb17,.nx/cache/project-graph.json~0eb9fb17
+[NX Daemon Server] - 2024-03-01T08:12:48.278Z - Time taken for 'hash changed files from watcher' 0.30674999998882413ms
+[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+[NX Daemon Server] - 2024-03-01T08:12:48.315Z - Time taken for 'build-project-configs' 252.31349999993108ms
+[NX Daemon Server] - 2024-03-01T08:12:48.369Z - [WATCHER]: 2 file(s) created or restored, 2 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-03-01T08:12:48.471Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-01T08:12:48.471Z - [REQUEST]: .nx/cache/project-graph.json,.nx/cache/file-map.json,.nx/cache/vite.hash,.nx/cache/cypress.hash
+[NX Daemon Server] - 2024-03-01T08:12:48.471Z - [REQUEST]: .nx/cache/file-map.json~19c41a0f,.nx/cache/project-graph.json~19c41a0f
+[NX Daemon Server] - 2024-03-01T08:12:48.697Z - Time taken for 'hash changed files from watcher' 0.3417500000214204ms
+[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+[NX Daemon Server] - 2024-03-01T08:12:48.736Z - Time taken for 'build-project-configs' 249.50900000007823ms
+[NX Daemon Server] - 2024-03-01T08:12:48.791Z - [WATCHER]: 2 file(s) created or restored, 2 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-03-01T08:12:48.892Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-01T08:12:48.892Z - [REQUEST]: .nx/cache/file-map.json,.nx/cache/project-graph.json,.nx/cache/cypress.hash,.nx/cache/vite.hash
+[NX Daemon Server] - 2024-03-01T08:12:48.892Z - [REQUEST]: .nx/cache/file-map.json~7c9334c0,.nx/cache/project-graph.json~7c9334c0
+[NX Daemon Server] - 2024-03-01T08:12:49.115Z - Time taken for 'hash changed files from watcher' 0.34412499994505197ms
+[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+[NX Daemon Server] - 2024-03-01T08:12:49.150Z - Time taken for 'build-project-configs' 243.4907499999972ms
+[NX Daemon Server] - 2024-03-01T08:12:49.204Z - [WATCHER]: 2 file(s) created or restored, 2 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-03-01T08:12:49.305Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-01T08:12:49.305Z - [REQUEST]: .nx/cache/file-map.json,.nx/cache/project-graph.json,.nx/cache/cypress.hash,.nx/cache/vite.hash
+[NX Daemon Server] - 2024-03-01T08:12:49.305Z - [REQUEST]: .nx/cache/file-map.json~acb6f6ad,.nx/cache/project-graph.json~acb6f6ad
+[NX Daemon Server] - 2024-03-01T08:12:49.534Z - Time taken for 'hash changed files from watcher' 0.43437499995343387ms
+[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+[NX Daemon Server] - 2024-03-01T08:12:49.572Z - Time taken for 'build-project-configs' 251.57145799999125ms
+[NX Daemon Server] - 2024-03-01T08:12:49.627Z - [WATCHER]: 2 file(s) created or restored, 2 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-03-01T08:12:49.729Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-01T08:12:49.729Z - [REQUEST]: .nx/cache/project-graph.json,.nx/cache/file-map.json,.nx/cache/cypress.hash,.nx/cache/vite.hash
+[NX Daemon Server] - 2024-03-01T08:12:49.729Z - [REQUEST]: .nx/cache/project-graph.json~592c9fef,.nx/cache/file-map.json~592c9fef
+[NX Daemon Server] - 2024-03-01T08:12:49.958Z - Time taken for 'hash changed files from watcher' 0.37858300004154444ms
+[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+[NX Daemon Server] - 2024-03-01T08:12:49.995Z - Time taken for 'build-project-configs' 250.96262499992736ms
+[NX Daemon Server] - 2024-03-01T08:12:50.049Z - [WATCHER]: 2 file(s) created or restored, 2 file(s) modified, 2 file(s) deleted
+[NX Daemon Server] - 2024-03-01T08:12:50.151Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-01T08:12:50.151Z - [REQUEST]: .nx/cache/project-graph.json,.nx/cache/file-map.json,.nx/cache/vite.hash,.nx/cache/cypress.hash
+[NX Daemon Server] - 2024-03-01T08:12:50.151Z - [REQUEST]: .nx/cache/project-graph.json~dadb8edb,.nx/cache/file-map.json~dadb8edb
+[NX Daemon Server] - 2024-03-01T08:12:50.382Z - Time taken for 'hash changed files from watcher' 0.3769999999785796ms
+[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+[NX Daemon Server] - 2024-03-01T08:12:50.420Z - [WATCHER]: .gitignore was created or restored
+[NX Daemon Server] - 2024-03-01T08:12:50.420Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-03-01T08:12:50.420Z - Time taken for 'build-project-configs' 253.36854100006167ms
+[NX Daemon Server] - 2024-03-01T08:12:50.421Z - [WATCHER]: Stopping the watcher for /Users/thorsten/dev/js/_experiments/010-multimap-monorepo (sources)
+[NX Daemon Server] - 2024-03-01T08:12:50.421Z - [WATCHER]: Stopping the watcher for /Users/thorsten/dev/js/_experiments/010-multimap-monorepo (outputs)
+[NX Daemon Server] - 2024-03-01T08:12:50.421Z - Server stopped because: "Stopping the daemon the set of ignored files changed (native)"
+[NX Daemon Server] - 2024-03-01T08:13:19.071Z - Started listening on: /var/folders/jd/ccx02x3n3777429sf1_kl1hw0000gn/T/e1a224411d58cc574bc5/d.sock
+[NX Daemon Server] - 2024-03-01T08:13:19.073Z - [WATCHER]: Subscribed to changes within: /Users/thorsten/dev/js/_experiments/010-multimap-monorepo (native)
+[NX Daemon Server] - 2024-03-01T08:13:19.083Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-03-01T08:13:19.083Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-03-01T08:13:19.084Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-03-01T08:13:19.085Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-03-01T08:13:19.086Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-01T08:13:19.086Z - [REQUEST]: 
+[NX Daemon Server] - 2024-03-01T08:13:19.086Z - [REQUEST]: 
+[NX Daemon Server] - 2024-03-01T08:13:19.172Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-03-01T08:13:19.173Z - Time taken for 'total for creating and serializing project graph' 87.58420799998567ms
+[NX Daemon Server] - 2024-03-01T08:13:19.174Z - [WATCHER]: .nx/cache/d/server-process.json was created or restored
+[NX Daemon Server] - 2024-03-01T08:13:19.175Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-03-01T08:13:19.176Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 87. Response time: 4.
+[NX Daemon Server] - 2024-03-01T08:13:19.195Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-03-01T08:13:19.196Z - [REQUEST]: .nx/cache/d/server-process.json
+[NX Daemon Server] - 2024-03-01T08:13:19.196Z - [REQUEST]: 
+[NX Daemon Server] - 2024-03-01T08:13:19.218Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2024-03-01T08:13:19.219Z - Time taken for 'hash changed files from watcher' 0.07979099999647588ms
+[NX Daemon Server] - 2024-03-01T08:13:19.219Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2024-03-01T08:13:19.219Z - Handled HASH_TASKS. Handling time: 23. Response time: 1.
+[NX Daemon Server] - 2024-03-01T08:13:21.125Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-03-01T08:13:21.126Z - Established a connection. Number of open connections: 3
+[NX Daemon Server] - 2024-03-01T08:13:21.126Z - Closed a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-03-01T08:13:21.126Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-03-01T08:13:21.127Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-03-01T08:13:21.127Z - Time taken for 'total for creating and serializing project graph' 0.44470800005365163ms
+[NX Daemon Server] - 2024-03-01T08:13:21.128Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-03-01T08:13:21.128Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 1.
+[NX Daemon Server] - 2024-03-01T08:13:21.130Z - [REQUEST]: Responding to the client. handleRequestFileData
+[NX Daemon Server] - 2024-03-01T08:13:21.130Z - Done responding to the client handleRequestFileData
+[NX Daemon Server] - 2024-03-01T08:13:21.130Z - Handled REQUEST_FILE_DATA. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2024-03-01T08:13:21.131Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-03-01T08:13:27.858Z - Closed a connection. Number of open connections: 0
