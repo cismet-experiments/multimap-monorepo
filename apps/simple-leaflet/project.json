@@ -1,0 +1,8 @@
+{
+  "name": "simple-leaflet",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/simple-leaflet/src",
+  "projectType": "application",
+  "targets": {},
+  "tags": []
+}

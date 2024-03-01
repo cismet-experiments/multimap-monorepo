@@ -69,43 +69,139 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "LICENSE",
-        "hash": "8269006416483301648"
-      },
-      {
         "file": "package-lock.json",
         "hash": "2562381808006633399"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "9128725401656857621"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "16936441711144470533"
+      },
+      {
+        "file": ".eslintignore",
+        "hash": "7663861978715868291"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
       },
       {
         "file": ".vscode/settings.json",
         "hash": "16484529506918774342"
       },
       {
-        "file": "nx.json",
-        "hash": "5793279520664059605"
+        "file": ".prettierignore",
+        "hash": "16448050467312557263"
       },
       {
-        "file": "README.md",
-        "hash": "3692111591541179164"
-      },
-      {
-        "file": ".nx/cache/d/server-process.json",
-        "hash": "6639617908012357350"
+        "file": ".eslintrc.json",
+        "hash": "17866138117546000433"
       },
       {
         "file": "package.json",
         "hash": "7509115156306319746"
       },
       {
-        "file": ".gitignore",
-        "hash": "7663861978715868291"
+        "file": "LICENSE",
+        "hash": "8269006416483301648"
       },
       {
-        "file": "tsconfig.base.json",
-        "hash": "16936441711144470533"
+        "file": "README.md",
+        "hash": "3692111591541179164"
+      },
+      {
+        "file": "nx.json",
+        "hash": "5793279520664059605"
       }
     ],
     "projectFileMap": {
+      "simple-leaflet-e2e": [
+        {
+          "file": "apps/simple-leaflet-e2e/.eslintrc.json",
+          "hash": "14060216369337943343"
+        },
+        {
+          "file": "apps/simple-leaflet-e2e/cypress.config.ts",
+          "hash": "13956944011194715649",
+          "deps": [
+            "npm:@nx/cypress",
+            "npm:cypress"
+          ]
+        },
+        {
+          "file": "apps/simple-leaflet-e2e/project.json",
+          "hash": "9744540524533341432"
+        },
+        {
+          "file": "apps/simple-leaflet-e2e/src/e2e/app.cy.ts",
+          "hash": "8465238558643776322"
+        },
+        {
+          "file": "apps/simple-leaflet-e2e/src/fixtures/example.json",
+          "hash": "11785586596216172004"
+        },
+        {
+          "file": "apps/simple-leaflet-e2e/src/support/app.po.ts",
+          "hash": "11157016311132186162"
+        },
+        {
+          "file": "apps/simple-leaflet-e2e/src/support/commands.ts",
+          "hash": "5397443931564808659"
+        },
+        {
+          "file": "apps/simple-leaflet-e2e/src/support/e2e.ts",
+          "hash": "1054106023200826784"
+        },
+        {
+          "file": "apps/simple-leaflet-e2e/tsconfig.json",
+          "hash": "10740392072068377465"
+        }
+      ],
+      "multimap-monorepo-e2e": [
+        {
+          "file": "apps/multimap-monorepo-e2e/.eslintrc.json",
+          "hash": "14060216369337943343"
+        },
+        {
+          "file": "apps/multimap-monorepo-e2e/cypress.config.ts",
+          "hash": "4910062504582106196",
+          "deps": [
+            "npm:@nx/cypress",
+            "npm:cypress"
+          ]
+        },
+        {
+          "file": "apps/multimap-monorepo-e2e/project.json",
+          "hash": "12401316056015713112"
+        },
+        {
+          "file": "apps/multimap-monorepo-e2e/src/e2e/app.cy.ts",
+          "hash": "1684790051974834649"
+        },
+        {
+          "file": "apps/multimap-monorepo-e2e/src/fixtures/example.json",
+          "hash": "11785586596216172004"
+        },
+        {
+          "file": "apps/multimap-monorepo-e2e/src/support/app.po.ts",
+          "hash": "11157016311132186162"
+        },
+        {
+          "file": "apps/multimap-monorepo-e2e/src/support/commands.ts",
+          "hash": "5397443931564808659"
+        },
+        {
+          "file": "apps/multimap-monorepo-e2e/src/support/e2e.ts",
+          "hash": "1054106023200826784"
+        },
+        {
+          "file": "apps/multimap-monorepo-e2e/tsconfig.json",
+          "hash": "10740392072068377465"
+        }
+      ],
       "multimap-monorepo": [
         {
           "file": "apps/multimap-monorepo/.eslintrc.json",
@@ -180,46 +276,78 @@
           ]
         }
       ],
-      "multimap-monorepo-e2e": [
+      "simple-leaflet": [
         {
-          "file": "apps/multimap-monorepo-e2e/.eslintrc.json",
-          "hash": "14060216369337943343"
+          "file": "apps/simple-leaflet/.eslintrc.json",
+          "hash": "11012487992710232822"
         },
         {
-          "file": "apps/multimap-monorepo-e2e/cypress.config.ts",
-          "hash": "4910062504582106196",
+          "file": "apps/simple-leaflet/index.html",
+          "hash": "5318459178165148003"
+        },
+        {
+          "file": "apps/simple-leaflet/project.json",
+          "hash": "856022199238193733"
+        },
+        {
+          "file": "apps/simple-leaflet/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/simple-leaflet/src/app/App.module.css",
+          "hash": "8887387885984320532"
+        },
+        {
+          "file": "apps/simple-leaflet/src/app/App.spec.tsx",
+          "hash": "8310433211404816224",
           "deps": [
-            "npm:@nx/cypress",
-            "npm:cypress"
+            "npm:@testing-library/react"
           ]
         },
         {
-          "file": "apps/multimap-monorepo-e2e/project.json",
-          "hash": "12401316056015713112"
+          "file": "apps/simple-leaflet/src/app/App.tsx",
+          "hash": "4539160076138897219"
         },
         {
-          "file": "apps/multimap-monorepo-e2e/src/e2e/app.cy.ts",
-          "hash": "1684790051974834649"
+          "file": "apps/simple-leaflet/src/app/nx-welcome.tsx",
+          "hash": "729168762476089670"
         },
         {
-          "file": "apps/multimap-monorepo-e2e/src/fixtures/example.json",
-          "hash": "11785586596216172004"
+          "file": "apps/simple-leaflet/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
         },
         {
-          "file": "apps/multimap-monorepo-e2e/src/support/app.po.ts",
-          "hash": "11157016311132186162"
+          "file": "apps/simple-leaflet/src/main.tsx",
+          "hash": "15724100768856802330",
+          "deps": [
+            "npm:react",
+            "npm:react-dom"
+          ]
         },
         {
-          "file": "apps/multimap-monorepo-e2e/src/support/commands.ts",
-          "hash": "5397443931564808659"
+          "file": "apps/simple-leaflet/src/styles.css",
+          "hash": "5195668842064076916"
         },
         {
-          "file": "apps/multimap-monorepo-e2e/src/support/e2e.ts",
-          "hash": "1054106023200826784"
+          "file": "apps/simple-leaflet/tsconfig.app.json",
+          "hash": "7232119452847825095"
         },
         {
-          "file": "apps/multimap-monorepo-e2e/tsconfig.json",
-          "hash": "10740392072068377465"
+          "file": "apps/simple-leaflet/tsconfig.json",
+          "hash": "11166545116916107487"
+        },
+        {
+          "file": "apps/simple-leaflet/tsconfig.spec.json",
+          "hash": "9472099605191632308"
+        },
+        {
+          "file": "apps/simple-leaflet/vite.config.ts",
+          "hash": "4261158971159539723",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:@nx/vite"
+          ]
         }
       ]
     }

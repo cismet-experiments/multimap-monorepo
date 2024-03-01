@@ -59,5 +59,66 @@
         "{workspaceRoot}/coverage/apps/multimap-monorepo"
       ]
     }
+  },
+  "5201962727561641894": {
+    "build": {
+      "command": "vite build",
+      "options": {
+        "cwd": "apps/simple-leaflet"
+      },
+      "cache": true,
+      "dependsOn": [
+        "^build"
+      ],
+      "inputs": [
+        "production",
+        "^production",
+        {
+          "externalDependencies": [
+            "vite"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}\\dist\\apps\\simple-leaflet"
+      ]
+    },
+    "serve": {
+      "command": "vite serve",
+      "options": {
+        "cwd": "apps/simple-leaflet"
+      }
+    },
+    "preview": {
+      "command": "vite preview",
+      "options": {
+        "cwd": "apps/simple-leaflet"
+      }
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build"
+      }
+    },
+    "test": {
+      "command": "vitest run",
+      "options": {
+        "cwd": "apps/simple-leaflet"
+      },
+      "cache": true,
+      "inputs": [
+        "default",
+        "^production",
+        {
+          "externalDependencies": [
+            "vitest"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}\\coverage\\apps\\simple-leaflet"
+      ]
+    }
   }
 }

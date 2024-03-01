@@ -14,6 +14,7 @@
             },
             "inputs": [
               "default",
+              "{workspaceRoot}/.eslintrc.json",
               "{workspaceRoot}/apps/multimap-monorepo-e2e/.eslintrc.json",
               "{workspaceRoot}/tools/eslint-rules/**/*",
               {
@@ -110,6 +111,117 @@
         "tags": []
       }
     },
+    "simple-leaflet-e2e": {
+      "name": "simple-leaflet-e2e",
+      "type": "e2e",
+      "data": {
+        "root": "apps/simple-leaflet-e2e",
+        "targets": {
+          "lint": {
+            "cache": true,
+            "options": {
+              "cwd": "apps/simple-leaflet-e2e",
+              "command": "eslint ."
+            },
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/apps/simple-leaflet-e2e/.eslintrc.json",
+              "{workspaceRoot}/tools/eslint-rules/**/*",
+              {
+                "externalDependencies": [
+                  "eslint"
+                ]
+              }
+            ],
+            "executor": "nx:run-commands",
+            "configurations": {}
+          },
+          "e2e": {
+            "options": {
+              "cwd": "apps/simple-leaflet-e2e",
+              "command": "cypress run"
+            },
+            "cache": true,
+            "inputs": [
+              "default",
+              "^production",
+              {
+                "externalDependencies": [
+                  "cypress"
+                ]
+              }
+            ],
+            "outputs": [
+              "{workspaceRoot}\\dist\\cypress\\apps\\simple-leaflet-e2e\\videos",
+              "{workspaceRoot}\\dist\\cypress\\apps\\simple-leaflet-e2e\\screenshots"
+            ],
+            "configurations": {
+              "production": {
+                "command": "cypress run --env webServerCommand=\"nx run simple-leaflet:preview\""
+              }
+            },
+            "executor": "nx:run-commands"
+          },
+          "e2e-ci--src\\e2e\\app.cy.ts": {
+            "outputs": [
+              "{workspaceRoot}\\dist\\cypress\\apps\\simple-leaflet-e2e\\videos",
+              "{workspaceRoot}\\dist\\cypress\\apps\\simple-leaflet-e2e\\screenshots"
+            ],
+            "inputs": [
+              "default",
+              "^production",
+              {
+                "externalDependencies": [
+                  "cypress"
+                ]
+              }
+            ],
+            "cache": true,
+            "options": {
+              "cwd": "apps/simple-leaflet-e2e",
+              "command": "cypress run --env webServerCommand=\"nx run simple-leaflet:serve-static\" --spec src\\e2e\\app.cy.ts"
+            },
+            "executor": "nx:run-commands",
+            "configurations": {}
+          },
+          "e2e-ci": {
+            "executor": "nx:noop",
+            "cache": true,
+            "inputs": [
+              "default",
+              "^production",
+              {
+                "externalDependencies": [
+                  "cypress"
+                ]
+              }
+            ],
+            "outputs": [
+              "{workspaceRoot}\\dist\\cypress\\apps\\simple-leaflet-e2e\\videos",
+              "{workspaceRoot}\\dist\\cypress\\apps\\simple-leaflet-e2e\\screenshots"
+            ],
+            "dependsOn": [
+              {
+                "target": "e2e-ci--src\\e2e\\app.cy.ts",
+                "projects": "self",
+                "params": "forward"
+              }
+            ],
+            "options": {},
+            "configurations": {}
+          }
+        },
+        "projectType": "application",
+        "name": "simple-leaflet-e2e",
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "apps/simple-leaflet-e2e/src",
+        "implicitDependencies": [
+          "simple-leaflet"
+        ],
+        "tags": []
+      }
+    },
     "multimap-monorepo": {
       "name": "multimap-monorepo",
       "type": "app",
@@ -192,6 +304,7 @@
             },
             "inputs": [
               "default",
+              "{workspaceRoot}/.eslintrc.json",
               "{workspaceRoot}/apps/multimap-monorepo/.eslintrc.json",
               "{workspaceRoot}/tools/eslint-rules/**/*",
               {
@@ -207,6 +320,109 @@
         "name": "multimap-monorepo",
         "$schema": "../../node_modules/nx/schemas/project-schema.json",
         "sourceRoot": "apps/multimap-monorepo/src",
+        "projectType": "application",
+        "tags": [],
+        "implicitDependencies": []
+      }
+    },
+    "simple-leaflet": {
+      "name": "simple-leaflet",
+      "type": "app",
+      "data": {
+        "root": "apps/simple-leaflet",
+        "targets": {
+          "build": {
+            "options": {
+              "cwd": "apps/simple-leaflet",
+              "command": "vite build"
+            },
+            "cache": true,
+            "dependsOn": [
+              "^build"
+            ],
+            "inputs": [
+              "production",
+              "^production",
+              {
+                "externalDependencies": [
+                  "vite"
+                ]
+              }
+            ],
+            "outputs": [
+              "{workspaceRoot}\\dist\\apps\\simple-leaflet"
+            ],
+            "executor": "nx:run-commands",
+            "configurations": {}
+          },
+          "serve": {
+            "options": {
+              "cwd": "apps/simple-leaflet",
+              "command": "vite serve"
+            },
+            "executor": "nx:run-commands",
+            "configurations": {}
+          },
+          "preview": {
+            "options": {
+              "cwd": "apps/simple-leaflet",
+              "command": "vite preview"
+            },
+            "executor": "nx:run-commands",
+            "configurations": {}
+          },
+          "serve-static": {
+            "executor": "@nx/web:file-server",
+            "options": {
+              "buildTarget": "build"
+            },
+            "configurations": {}
+          },
+          "test": {
+            "options": {
+              "cwd": "apps/simple-leaflet",
+              "command": "vitest run"
+            },
+            "cache": true,
+            "inputs": [
+              "default",
+              "^production",
+              {
+                "externalDependencies": [
+                  "vitest"
+                ]
+              }
+            ],
+            "outputs": [
+              "{workspaceRoot}\\coverage\\apps\\simple-leaflet"
+            ],
+            "executor": "nx:run-commands",
+            "configurations": {}
+          },
+          "lint": {
+            "cache": true,
+            "options": {
+              "cwd": "apps/simple-leaflet",
+              "command": "eslint ."
+            },
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/apps/simple-leaflet/.eslintrc.json",
+              "{workspaceRoot}/tools/eslint-rules/**/*",
+              {
+                "externalDependencies": [
+                  "eslint"
+                ]
+              }
+            ],
+            "executor": "nx:run-commands",
+            "configurations": {}
+          }
+        },
+        "name": "simple-leaflet",
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "apps/simple-leaflet/src",
         "projectType": "application",
         "tags": [],
         "implicitDependencies": []
@@ -8945,6 +9161,23 @@
         "type": "static"
       }
     ],
+    "simple-leaflet-e2e": [
+      {
+        "source": "simple-leaflet-e2e",
+        "target": "simple-leaflet",
+        "type": "implicit"
+      },
+      {
+        "source": "simple-leaflet-e2e",
+        "target": "npm:@nx/cypress",
+        "type": "static"
+      },
+      {
+        "source": "simple-leaflet-e2e",
+        "target": "npm:cypress",
+        "type": "static"
+      }
+    ],
     "multimap-monorepo": [
       {
         "source": "multimap-monorepo",
@@ -8973,6 +9206,38 @@
       },
       {
         "source": "multimap-monorepo",
+        "target": "npm:@nx/vite",
+        "type": "static"
+      }
+    ],
+    "simple-leaflet": [
+      {
+        "source": "simple-leaflet",
+        "target": "npm:@testing-library/react",
+        "type": "static"
+      },
+      {
+        "source": "simple-leaflet",
+        "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "simple-leaflet",
+        "target": "npm:react-dom",
+        "type": "static"
+      },
+      {
+        "source": "simple-leaflet",
+        "target": "npm:vite",
+        "type": "static"
+      },
+      {
+        "source": "simple-leaflet",
+        "target": "npm:@vitejs/plugin-react",
+        "type": "static"
+      },
+      {
+        "source": "simple-leaflet",
         "target": "npm:@nx/vite",
         "type": "static"
       }
