@@ -1,0 +1,8 @@
+{
+  "name": "simple-cesium",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/simple-cesium/src",
+  "projectType": "application",
+  "targets": {},
+  "tags": []
+}
