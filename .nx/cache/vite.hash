@@ -1,5 +1,5 @@
 {
-  "6032943375956451158": {
+  "4030000175921320233": {
     "build": {
       "command": "vite build",
       "options": {
@@ -19,7 +19,7 @@
         }
       ],
       "outputs": [
-        "{workspaceRoot}/dist/apps/multimap-monorepo"
+        "{workspaceRoot}\\dist\\apps\\multimap-monorepo"
       ]
     },
     "serve": {
@@ -56,11 +56,11 @@
         }
       ],
       "outputs": [
-        "{workspaceRoot}/coverage/apps/multimap-monorepo"
+        "{workspaceRoot}\\coverage\\apps\\multimap-monorepo"
       ]
     }
   },
-  "5201962727561641894": {
+  "18411737693696846826": {
     "build": {
       "command": "vite build",
       "options": {
@@ -118,6 +118,67 @@
       ],
       "outputs": [
         "{workspaceRoot}\\coverage\\apps\\simple-leaflet"
+      ]
+    }
+  },
+  "12264710176400318385": {
+    "build": {
+      "command": "vite build",
+      "options": {
+        "cwd": "apps/simple-maplibre"
+      },
+      "cache": true,
+      "dependsOn": [
+        "^build"
+      ],
+      "inputs": [
+        "production",
+        "^production",
+        {
+          "externalDependencies": [
+            "vite"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}\\dist\\apps\\simple-maplibre"
+      ]
+    },
+    "serve": {
+      "command": "vite serve",
+      "options": {
+        "cwd": "apps/simple-maplibre"
+      }
+    },
+    "preview": {
+      "command": "vite preview",
+      "options": {
+        "cwd": "apps/simple-maplibre"
+      }
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "build"
+      }
+    },
+    "test": {
+      "command": "vitest run",
+      "options": {
+        "cwd": "apps/simple-maplibre"
+      },
+      "cache": true,
+      "inputs": [
+        "default",
+        "^production",
+        {
+          "externalDependencies": [
+            "vitest"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}\\coverage\\apps\\simple-maplibre"
       ]
     }
   }

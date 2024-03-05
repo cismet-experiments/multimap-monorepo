@@ -1,0 +1,8 @@
+{
+  "name": "simple-maplibre",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/simple-maplibre/src",
+  "projectType": "application",
+  "targets": {},
+  "tags": []
+}

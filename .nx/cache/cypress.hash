@@ -1,5 +1,5 @@
 {
-  "13035167292212712907": {
+  "2707228784526840743": {
     "e2e": {
       "command": "cypress run",
       "options": {
@@ -16,8 +16,8 @@
         }
       ],
       "outputs": [
-        "{workspaceRoot}/dist/cypress/apps/multimap-monorepo-e2e/videos",
-        "{workspaceRoot}/dist/cypress/apps/multimap-monorepo-e2e/screenshots"
+        "{workspaceRoot}\\dist\\cypress\\apps\\multimap-monorepo-e2e\\videos",
+        "{workspaceRoot}\\dist\\cypress\\apps\\multimap-monorepo-e2e\\screenshots"
       ],
       "configurations": {
         "production": {
@@ -25,10 +25,10 @@
         }
       }
     },
-    "e2e-ci--src/e2e/app.cy.ts": {
+    "e2e-ci--src\\e2e\\app.cy.ts": {
       "outputs": [
-        "{workspaceRoot}/dist/cypress/apps/multimap-monorepo-e2e/videos",
-        "{workspaceRoot}/dist/cypress/apps/multimap-monorepo-e2e/screenshots"
+        "{workspaceRoot}\\dist\\cypress\\apps\\multimap-monorepo-e2e\\videos",
+        "{workspaceRoot}\\dist\\cypress\\apps\\multimap-monorepo-e2e\\screenshots"
       ],
       "inputs": [
         "default",
@@ -40,7 +40,7 @@
         }
       ],
       "cache": true,
-      "command": "cypress run --env webServerCommand=\"nx run multimap-monorepo:serve-static\" --spec src/e2e/app.cy.ts",
+      "command": "cypress run --env webServerCommand=\"nx run multimap-monorepo:serve-static\" --spec src\\e2e\\app.cy.ts",
       "options": {
         "cwd": "apps/multimap-monorepo-e2e"
       }
@@ -58,19 +58,19 @@
         }
       ],
       "outputs": [
-        "{workspaceRoot}/dist/cypress/apps/multimap-monorepo-e2e/videos",
-        "{workspaceRoot}/dist/cypress/apps/multimap-monorepo-e2e/screenshots"
+        "{workspaceRoot}\\dist\\cypress\\apps\\multimap-monorepo-e2e\\videos",
+        "{workspaceRoot}\\dist\\cypress\\apps\\multimap-monorepo-e2e\\screenshots"
       ],
       "dependsOn": [
         {
-          "target": "e2e-ci--src/e2e/app.cy.ts",
+          "target": "e2e-ci--src\\e2e\\app.cy.ts",
           "projects": "self",
           "params": "forward"
         }
       ]
     }
   },
-  "2192323904366693149": {
+  "8488470707322034459": {
     "e2e": {
       "command": "cypress run",
       "options": {
@@ -131,6 +131,77 @@
       "outputs": [
         "{workspaceRoot}\\dist\\cypress\\apps\\simple-leaflet-e2e\\videos",
         "{workspaceRoot}\\dist\\cypress\\apps\\simple-leaflet-e2e\\screenshots"
+      ],
+      "dependsOn": [
+        {
+          "target": "e2e-ci--src\\e2e\\app.cy.ts",
+          "projects": "self",
+          "params": "forward"
+        }
+      ]
+    }
+  },
+  "18393931540677532443": {
+    "e2e": {
+      "command": "cypress run",
+      "options": {
+        "cwd": "apps/simple-maplibre-e2e"
+      },
+      "cache": true,
+      "inputs": [
+        "default",
+        "^production",
+        {
+          "externalDependencies": [
+            "cypress"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}\\dist\\cypress\\apps\\simple-maplibre-e2e\\videos",
+        "{workspaceRoot}\\dist\\cypress\\apps\\simple-maplibre-e2e\\screenshots"
+      ],
+      "configurations": {
+        "production": {
+          "command": "cypress run --env webServerCommand=\"nx run simple-maplibre:preview\""
+        }
+      }
+    },
+    "e2e-ci--src\\e2e\\app.cy.ts": {
+      "outputs": [
+        "{workspaceRoot}\\dist\\cypress\\apps\\simple-maplibre-e2e\\videos",
+        "{workspaceRoot}\\dist\\cypress\\apps\\simple-maplibre-e2e\\screenshots"
+      ],
+      "inputs": [
+        "default",
+        "^production",
+        {
+          "externalDependencies": [
+            "cypress"
+          ]
+        }
+      ],
+      "cache": true,
+      "command": "cypress run --env webServerCommand=\"nx run simple-maplibre:serve-static\" --spec src\\e2e\\app.cy.ts",
+      "options": {
+        "cwd": "apps/simple-maplibre-e2e"
+      }
+    },
+    "e2e-ci": {
+      "executor": "nx:noop",
+      "cache": true,
+      "inputs": [
+        "default",
+        "^production",
+        {
+          "externalDependencies": [
+            "cypress"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}\\dist\\cypress\\apps\\simple-maplibre-e2e\\videos",
+        "{workspaceRoot}\\dist\\cypress\\apps\\simple-maplibre-e2e\\screenshots"
       ],
       "dependsOn": [
         {
