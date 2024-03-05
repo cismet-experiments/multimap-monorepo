@@ -45,6 +45,3 @@ Thumbs.db
 apps/wunda/verkehrszeichenkataster/public/signs/*
 
 apps/**/.env
-
-# Maplibre
-secretdata.js

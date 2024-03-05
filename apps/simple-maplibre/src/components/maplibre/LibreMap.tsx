@@ -16,6 +16,8 @@ const LibreMap = () => {
       style: `https://omt.map-hosting.de/styles/osm-bright/style.json`,
       center: [lng, lat],
       zoom: zoom,
+      pitch: 100,
+      // bearing: 172,
     });
 
     map.current.on('load', function () {
@@ -48,9 +50,11 @@ const LibreMap = () => {
       map.current.addLayer({
         id: 'wms-test-layer',
         type: 'raster',
+        // _opacity: 0.25,
         opacity: 0.25,
 
         source: 'wms-test-source',
+        // paint: { 'raster-opacity': 0.5 },
         paint: { 'raster-opacity': 0.5 },
       });
 
@@ -69,26 +73,26 @@ const LibreMap = () => {
         },
       });
 
-      map.current.addLayer({
-        id: '3d-buildings',
-        source: 'openmaptiles',
-        'source-layer': 'building',
+      // map.current.addLayer({
+      //   id: '3d-buildings',
+      //   source: 'openmaptiles',
+      //   'source-layer': 'building',
 
-        type: 'fill-extrusion',
-        minzoom: 15,
-        paint: {
-          'fill-extrusion-color': '#aaa',
-          'fill-extrusion-height': {
-            type: 'identity',
-            property: 'render_height',
-          },
-          'fill-extrusion-base': {
-            type: 'identity',
-            property: 'render_min_height',
-          },
-          'fill-extrusion-opacity': 0.5,
-        },
-      });
+      //   type: 'fill-extrusion',
+      //   minzoom: 15,
+      //   paint: {
+      //     'fill-extrusion-color': '#aaa',
+      //     'fill-extrusion-height': {
+      //       type: 'identity',
+      //       property: 'render_height',
+      //     },
+      //     'fill-extrusion-base': {
+      //       type: 'identity',
+      //       property: 'render_min_height',
+      //     },
+      //     'fill-extrusion-opacity': 0.1,
+      //   },
+      // });
 
       console.log('map.current', map.current);
     });
