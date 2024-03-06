@@ -9,6 +9,7 @@ const LibreMap = () => {
   const [lng] = useState(7.150764);
   const [lat] = useState(51.256);
   const [zoom] = useState(14);
+  const [clickInfo, setClickInfo] = useState(null);
   useEffect(() => {
     if (map.current) return;
     map.current = new maplibregl.Map({
@@ -18,6 +19,15 @@ const LibreMap = () => {
       zoom: zoom,
       pitch: 100,
       // bearing: 172,
+    });
+
+    map.current.on('click', (e) => {
+      const features = map.current.queryRenderedFeatures(e.point);
+      setClickInfo({
+        ...e.lngLat,
+        type: features[0]?.properties?.class || 'keine Angaben',
+        title: features[0]?.properties?.name || 'Informationen',
+      });
     });
 
     map.current.on('load', function () {
@@ -112,8 +122,29 @@ const LibreMap = () => {
     );
   }, [lng, lat, zoom]);
   return (
-    <div className="map-wrap">
-      <div ref={mapContainer} className="map" />
+    <div style={{ position: 'relative', width: '100%', height: '900px' }}>
+      <div className="map-wrap">
+        <div ref={mapContainer} className="map" />
+        <div
+          style={{
+            fontFamily: 'Helvetica, Arial, sans-serif',
+            fontSize: '12px',
+            position: 'absolute',
+            top: '10px',
+            right: '10px',
+            background: 'white',
+            padding: '10px',
+            border: '1px solid #ddd',
+            borderRadius: '4px',
+            boxShadow: '0 0 0 2px rgba(0,0,0,.1)',
+          }}
+        >
+          <h4>{clickInfo?.title || 'Information'}</h4>
+          <p>Latitude: {clickInfo?.lat || ''}</p>
+          <p>Longitude: {clickInfo?.lng || ''}</p>
+          <p>Art: {clickInfo?.type || ''}</p>
+        </div>
+      </div>
     </div>
   );
 };
