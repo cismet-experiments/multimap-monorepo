@@ -1,6 +1,7 @@
 /// <reference types='vitest' />
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import cesium from 'vite-plugin-cesium';
 import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
 
 export default defineConfig({
@@ -17,7 +18,14 @@ export default defineConfig({
     host: 'localhost',
   },
 
-  plugins: [react(), nxViteTsPaths()],
+  plugins: [
+    cesium({
+      cesiumBuildPath: '../../node_modules/cesium/Build/Cesium/',
+      cesiumBuildRootPath: '../../node_modules/cesium/Build',
+    }),
+    react(),
+    nxViteTsPaths(),
+  ],
 
   // Uncomment this if you are using workers.
   // worker: {

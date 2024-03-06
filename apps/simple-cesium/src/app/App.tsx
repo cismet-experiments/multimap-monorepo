@@ -1,14 +1,7 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './App.module.css';
-
-import NxWelcome from './nx-welcome';
+import { Viewer } from 'resium';
 
 export function App() {
-  return (
-    <div>
-      <NxWelcome title="simple-cesium" />
-    </div>
-  );
+  return <Viewer full />;
 }
 
 export default App;
