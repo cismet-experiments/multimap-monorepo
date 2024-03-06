@@ -55,7 +55,7 @@ const LibreMap = () => {
 
         source: 'wms-test-source',
         // paint: { 'raster-opacity': 0.5 },
-        paint: { 'raster-opacity': 0.5 },
+        paint: { 'raster-opacity': 0.6 },
       });
 
       map.current.addLayer({
@@ -93,11 +93,14 @@ const LibreMap = () => {
       //     'fill-extrusion-opacity': 0.1,
       //   },
       // });
-
-      console.log('map.current', map.current);
     });
 
-    map.current.addControl(new maplibregl.NavigationControl(), 'top-left');
+    map.current.addControl(
+      new maplibregl.NavigationControl({
+        visualizePitch: true,
+      }),
+      'top-left'
+    );
     map.current.addControl(
       new maplibregl.TerrainControl({
         source: 'terrainSource',
