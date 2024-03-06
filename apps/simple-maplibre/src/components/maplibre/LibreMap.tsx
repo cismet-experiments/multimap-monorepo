@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useState } from 'react';
 import maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import './map.css';
+import MapOverlay from './ui/MapOverlay';
 
 const LibreMap = () => {
   const mapContainer = useRef(null);
@@ -125,25 +126,12 @@ const LibreMap = () => {
     <div style={{ position: 'relative', width: '100%', height: '900px' }}>
       <div className="map-wrap">
         <div ref={mapContainer} className="map" />
-        <div
-          style={{
-            fontFamily: 'Helvetica, Arial, sans-serif',
-            fontSize: '12px',
-            position: 'absolute',
-            top: '10px',
-            right: '10px',
-            background: 'white',
-            padding: '10px',
-            border: '1px solid #ddd',
-            borderRadius: '4px',
-            boxShadow: '0 0 0 2px rgba(0,0,0,.1)',
-          }}
-        >
+        <MapOverlay>
           <h4>{clickInfo?.title || 'Information'}</h4>
           <p>Latitude: {clickInfo?.lat || ''}</p>
           <p>Longitude: {clickInfo?.lng || ''}</p>
           <p>Art: {clickInfo?.type || ''}</p>
-        </div>
+        </MapOverlay>
       </div>
     </div>
   );
