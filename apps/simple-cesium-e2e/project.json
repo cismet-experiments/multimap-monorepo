@@ -1,0 +1,9 @@
+{
+  "name": "simple-cesium-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/simple-cesium-e2e/src",
+  "targets": {},
+  "implicitDependencies": ["simple-cesium"],
+  "tags": []
+}
