@@ -49,61 +49,17 @@ const LibreMap = () => {
         tileSize: 512,
         maxzoom: 15,
       });
-      map.current.addSource('hillshadeSource', {
-        type: 'raster-dem',
-        tiles: [
-          'https://wuppertal-terrain.cismet.de/services/wupp_dgm_01/tiles/{z}/{x}/{y}.png',
-        ],
-        tileSize: 512,
-        maxzoom: 15,
-      });
 
       map.current.addLayer({
         id: 'wms-test-layer',
         type: 'raster',
-        // _opacity: 0.25,
         opacity: 0.25,
-
         source: 'wms-test-source',
-        // paint: { 'raster-opacity': 0.5 },
-        paint: { 'raster-opacity': 0.6 },
-      });
-
-      map.current.addLayer({
-        id: 'hillshade',
-        type: 'hillshade',
-        source: 'hillshadeSource',
-        layout: { visibility: 'visible' },
         paint: {
-          'hillshade-accent-color': '#5a5a5a',
-          'hillshade-exaggeration': 0.5,
-          'hillshade-highlight-color': '#FFFFFF',
-          'hillshade-illumination-anchor': 'viewport',
-          'hillshade-illumination-direction': 335,
-          'hillshade-shadow-color': '#5a5a5a',
+          'raster-opacity': 0.4,
+          'raster-contrast': 0.4,
         },
       });
-
-      // map.current.addLayer({
-      //   id: '3d-buildings',
-      //   source: 'openmaptiles',
-      //   'source-layer': 'building',
-
-      //   type: 'fill-extrusion',
-      //   minzoom: 15,
-      //   paint: {
-      //     'fill-extrusion-color': '#aaa',
-      //     'fill-extrusion-height': {
-      //       type: 'identity',
-      //       property: 'render_height',
-      //     },
-      //     'fill-extrusion-base': {
-      //       type: 'identity',
-      //       property: 'render_min_height',
-      //     },
-      //     'fill-extrusion-opacity': 0.1,
-      //   },
-      // });
     });
 
     map.current.addControl(
