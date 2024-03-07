@@ -11,15 +11,14 @@ const LibreMap = () => {
   const [lat] = useState(51.256);
   const [zoom] = useState(14);
   const [clickInfo, setClickInfo] = useState(null);
+  const [showRasterLayer, setShowRasterLayer] = useState(false);
   useEffect(() => {
-    if (map.current) return;
     map.current = new maplibregl.Map({
       container: mapContainer.current,
       style: `https://omt.map-hosting.de/styles/osm-bright/style.json`,
       center: [lng, lat],
       zoom: zoom,
       pitch: 100,
-      // bearing: 172,
     });
 
     map.current.on('click', (e) => {
@@ -50,16 +49,18 @@ const LibreMap = () => {
         maxzoom: 15,
       });
 
-      map.current.addLayer({
-        id: 'wms-test-layer',
-        type: 'raster',
-        opacity: 0.25,
-        source: 'wms-test-source',
-        paint: {
-          'raster-opacity': 0.4,
-          'raster-contrast': 0.4,
-        },
-      });
+      if (showRasterLayer) {
+        map.current.addLayer({
+          id: 'wms-test-layer',
+          type: 'raster',
+          opacity: 0.25,
+          source: 'wms-test-source',
+          paint: {
+            'raster-opacity': 0.4,
+            'raster-contrast': 0.4,
+          },
+        });
+      }
     });
 
     map.current.addControl(
@@ -77,7 +78,7 @@ const LibreMap = () => {
       }),
       'top-left'
     );
-  }, [lng, lat, zoom]);
+  }, [lng, lat, zoom, showRasterLayer]);
   return (
     <div style={{ position: 'relative', width: '100%', height: '900px' }}>
       <div className="map-wrap">
@@ -87,6 +88,9 @@ const LibreMap = () => {
           <p>Latitude: {clickInfo?.lat || ''}</p>
           <p>Longitude: {clickInfo?.lng || ''}</p>
           <p>Art: {clickInfo?.type || ''}</p>
+          <button onClick={() => setShowRasterLayer(!showRasterLayer)}>
+            Set raster opacity
+          </button>
         </MapOverlay>
       </div>
     </div>
